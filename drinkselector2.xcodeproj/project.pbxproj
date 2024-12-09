@@ -14,6 +14,13 @@
 		4894D35B2D06ECDA008C7120 /* drinkselector2Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4894D35A2D06ECDA008C7120 /* drinkselector2Tests.swift */; };
 		4894D3652D06ECDA008C7120 /* drinkselector2UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4894D3642D06ECDA008C7120 /* drinkselector2UITests.swift */; };
 		4894D3672D06ECDA008C7120 /* drinkselector2UITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4894D3662D06ECDA008C7120 /* drinkselector2UITestsLaunchTests.swift */; };
+		4894D3792D06EDAB008C7120 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4894D3782D06EDAB008C7120 /* Product.swift */; };
+		4894D37B2D06EDC6008C7120 /* ProductRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4894D37A2D06EDC6008C7120 /* ProductRepository.swift */; };
+		4894D37D2D06EDDC008C7120 /* ProductUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4894D37C2D06EDDC008C7120 /* ProductUseCase.swift */; };
+		4894D37F2D06EDF4008C7120 /* RemoteProductRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4894D37E2D06EDF4008C7120 /* RemoteProductRepository.swift */; };
+		4894D3812D06EE1F008C7120 /* DrinkSelectionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4894D3802D06EE1F008C7120 /* DrinkSelectionViewModel.swift */; };
+		4894D3852D06EE4A008C7120 /* OrderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4894D3842D06EE4A008C7120 /* OrderView.swift */; };
+		4894D3882D06F028008C7120 /* radioButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4894D3872D06F028008C7120 /* radioButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +51,13 @@
 		4894D3602D06ECDA008C7120 /* drinkselector2UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = drinkselector2UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4894D3642D06ECDA008C7120 /* drinkselector2UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = drinkselector2UITests.swift; sourceTree = "<group>"; };
 		4894D3662D06ECDA008C7120 /* drinkselector2UITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = drinkselector2UITestsLaunchTests.swift; sourceTree = "<group>"; };
+		4894D3782D06EDAB008C7120 /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
+		4894D37A2D06EDC6008C7120 /* ProductRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductRepository.swift; sourceTree = "<group>"; };
+		4894D37C2D06EDDC008C7120 /* ProductUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductUseCase.swift; sourceTree = "<group>"; };
+		4894D37E2D06EDF4008C7120 /* RemoteProductRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteProductRepository.swift; sourceTree = "<group>"; };
+		4894D3802D06EE1F008C7120 /* DrinkSelectionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrinkSelectionViewModel.swift; sourceTree = "<group>"; };
+		4894D3842D06EE4A008C7120 /* OrderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderView.swift; sourceTree = "<group>"; };
+		4894D3872D06F028008C7120 /* radioButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = radioButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,8 +108,11 @@
 		4894D3482D06ECD9008C7120 /* drinkselector2 */ = {
 			isa = PBXGroup;
 			children = (
+				4894D3862D06EFE4008C7120 /* components */,
+				4894D3752D06ED16008C7120 /* Presentation */,
+				4894D3742D06ED0E008C7120 /* Data */,
+				4894D3732D06ED03008C7120 /* Domain */,
 				4894D3492D06ECD9008C7120 /* drinkselector2App.swift */,
-				4894D34B2D06ECD9008C7120 /* ContentView.swift */,
 				4894D34D2D06ECDA008C7120 /* Assets.xcassets */,
 				4894D34F2D06ECDA008C7120 /* Preview Content */,
 			);
@@ -125,6 +142,42 @@
 				4894D3662D06ECDA008C7120 /* drinkselector2UITestsLaunchTests.swift */,
 			);
 			path = drinkselector2UITests;
+			sourceTree = "<group>";
+		};
+		4894D3732D06ED03008C7120 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				4894D3782D06EDAB008C7120 /* Product.swift */,
+				4894D37A2D06EDC6008C7120 /* ProductRepository.swift */,
+				4894D37C2D06EDDC008C7120 /* ProductUseCase.swift */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		4894D3742D06ED0E008C7120 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				4894D37E2D06EDF4008C7120 /* RemoteProductRepository.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		4894D3752D06ED16008C7120 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				4894D34B2D06ECD9008C7120 /* ContentView.swift */,
+				4894D3802D06EE1F008C7120 /* DrinkSelectionViewModel.swift */,
+				4894D3842D06EE4A008C7120 /* OrderView.swift */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		4894D3862D06EFE4008C7120 /* components */ = {
+			isa = PBXGroup;
+			children = (
+				4894D3872D06F028008C7120 /* radioButton.swift */,
+			);
+			path = components;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,7 +311,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				4894D34C2D06ECD9008C7120 /* ContentView.swift in Sources */,
+				4894D3812D06EE1F008C7120 /* DrinkSelectionViewModel.swift in Sources */,
 				4894D34A2D06ECD9008C7120 /* drinkselector2App.swift in Sources */,
+				4894D3792D06EDAB008C7120 /* Product.swift in Sources */,
+				4894D37D2D06EDDC008C7120 /* ProductUseCase.swift in Sources */,
+				4894D3852D06EE4A008C7120 /* OrderView.swift in Sources */,
+				4894D3882D06F028008C7120 /* radioButton.swift in Sources */,
+				4894D37B2D06EDC6008C7120 /* ProductRepository.swift in Sources */,
+				4894D37F2D06EDF4008C7120 /* RemoteProductRepository.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
