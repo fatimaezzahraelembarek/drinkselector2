@@ -95,7 +95,7 @@ struct OrderView: View {
                 MailView(
                     subject: "\(size) \(product?.name ?? "Order")",
                     body: emailBody(),
-                    recipient: "Fatimaezzahraelembarek21@gmail.com",
+                    recipient: "coffee-m2sime@univ-rouen.fr",
                     isPresented: $isShowingMailView
                 )
             }
